@@ -63,7 +63,10 @@ parser.add_argument(
     ),
 )
 parser.add_argument(
-    "--device", type=str, default=None, help="Device to use. Like cuda, cuda:0 or cpu"
+    "--device", type=str, default=None, help="Device to use. Like cuda, cuda:0 or CPU"
+)
+parser.add_argument(
+    "--max-samples", type=int, default=None, help="max samples"
 )
 parser.add_argument(
     "--dims",
